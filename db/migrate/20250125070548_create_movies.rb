@@ -7,6 +7,8 @@ class CreateMovies < ActiveRecord::Migration[7.1]
       t.float :rating
 
       t.timestamps
+
+      t.index :title, unique: true
     end
   end
 end
